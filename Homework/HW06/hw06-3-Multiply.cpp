@@ -75,3 +75,27 @@
         6 x 9 = 54
 
 */
+
+#include<stdio.h>
+
+int main() {
+    int start , end ;
+
+    printf( "Start :\n" ) ;
+    scanf( "%d", &start ) ;
+
+    printf( "End :\n" ) ;
+    scanf( "%d", &end ) ;
+
+    for ( start ; start <= end ; start++ ) {
+        
+        for ( int i = 1 ; i < 10 ; i++ ) {
+            printf( "%d x %d = %d\n", start, i , start * i ) ;
+        }//end for เลข
+        printf( "\n" ) ;
+    }//end for หลัก
+    
+    
+        
+    return 0;
+}
